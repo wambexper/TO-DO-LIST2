@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <center><h1>TODO-LIST</h1></center>
+        <form id="taskForm">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" placeholder="Enter the task name" required/>
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" required/>
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="addTask">Add Task</button>
+        </form>
+        <div id="taskList"></div>
+        <div><p><i>Developed by: Peter-White</i></p></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
